@@ -1,0 +1,21 @@
+save_dir: 'saved_models/prior_fir0'
+fig_dir: 'figures/prior_fir0'
+sr: 16000
+c: 343.0
+
+training:
+  n_epochs: 300
+  learning_rate: 0.01
+  lambda_edc: 0.5
+  lambda_edp: 1.0
+  lambda_edr: 1.0
+
+sdn:
+  N: 6
+  junction_type: 'householder'
+  delay_buffer_len: 512
+  train_distances: false
+  distance_scaling: 0
+  max_distance_correction: 0
+  fir_order: 0
+  alpha: 0.02

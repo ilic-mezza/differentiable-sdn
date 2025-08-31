@@ -1,0 +1,22 @@
+save_dir: 'saved_models/correction_fir6'
+fig_dir: 'figures/correction_fir6'
+sr: 16000
+c: 343.0
+
+training:
+  n_epochs: 300
+  learning_rate: 0.01
+  lambda_edc: 0.5
+  lambda_edp: 1.0
+  lambda_edr: 1.0
+
+sdn:
+  N: 6
+  junction_type: 'householder'
+  delay_buffer_len: 512
+  train_distances: true
+  distance_scaling: 10.0
+  max_distance_correction: 0.5
+  fir_order: 6
+  alpha: 0.02
+
